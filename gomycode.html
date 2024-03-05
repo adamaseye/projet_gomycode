@@ -4,6 +4,10 @@
         <head>
             <meta charset="utf-8">
             <title>photographe d'animaux domestiques</title>
+            <link rel="stylesheet" href="style.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         </head>
 
         <body>
@@ -19,12 +23,11 @@
                 <a href="contact">contact</a>
             </nav>
             <main>
-                <p>Que diriez vous si vous pouviez avoir une photo de votre chien comme celui-ci:</p>
-            <img src="img/chien-mignon-lunettes-soleil-posant-pour-ia-generative-portrait_188544-12590.avif" alt="mignon chien"/>
+                <p class="titre">CHAM's LE PHOTOGRAPHE PREFERE DES CHIENS:</p>
                 <p>Passionné par la photographie, j'ai commencé à en faire mon métier.<br>Aujourd'hui, pour le plaisir de millier de personnes mais aussi d'animaux, je fais des photographies du meilleurs ami de l'homme.</p>
-                <p>Le but comme vous pouvez le voir sur la photo ci-dessus est de faire des photos original de votre chiens pour en garder des meilleurs souvenirs.</p>
-                <p>Nous proposons différents type de photonpour votre chien</p>
-                <ul>
+                <p>Le but de notre travail est de faire des photos original de votre chiens pour en garder des meilleurs souvenirs.</p>
+                <p>Nous proposons différents type de photo pour votre chien</p>
+                <ul class="liste">
                     <li>chien de la campagne</li>
                     <li>chien de la montagne</li>
                     <li>chien de la plage</li>
@@ -32,32 +35,37 @@
                     <li>etc</li>
                 </ul>
                 <p>Vous pouvez venir avec votre idée personnelle de la photo que vous voulez faire de votre chien</p>
-
             <section>
                 <p>Veuillez remplir ce formulaire ci-dessous</p>
-                    <form>
-                        a propos<input type="text" name="a_propos"/>
-                    </form>
-                </section>               
-                <section>
-                    <form>
-                        travail<input type="text" name="travail"/>
-                    </form>
-                </section>
-                <section>
-                    <form>
-                        cv<input type="text" name="cv"/>
-                    </form>
-                </section>
-                <section>
-                    <form>
-                        contact<input type="text" name="contact"/>
-                    </form>
-                </section>
-            </main> 
-
+                <form method="get" action="">
+                    <fieldset>
+                       <legend>Vos coordonnées</legend> <!-- Titre du fieldset --> 
+                       <label for="nom">Quel est votre nom ?</label>
+                       <input type="text" name="nom" id="nom">
+                       <label for="prenom">Quel est votre prénom ?</label>
+                       <input type="text" name="prenom" id="prenom">
+                       <label for="email">Quel est votre e-mail ?</label>
+                       <input type="email" name="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                       <legend>Votre souhait</legend> <!-- Titre du fieldset -->
+                       <p>
+                          Quel genre de photo souhaiterez vous avoir pour votre chien :
+                          <input type="radio" name="souhait" value="chien de la campagne" id="chien de la campagne"> <label for="chien de la campagne">chien de la campagne</label>
+                          <input type="radio" name="souhait" value="chien du parc " id="chien du parc"> <label for="chien du parc">chien du parc</label>
+                          <input type="radio" name="souhait" value="chien de la plage" id="chien de la plage"> <label for="chien de la plage">chien de la plage</label>
+                          <input type="radio" name="souhait" value="autre" id="autre"> <label for="autre">Autre...</label>
+                       </p>
+                       <p>
+                          <label for="precisions">Si "Autre", veuillez préciser :</label>
+                          <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+                       </p>
+                    </fieldset>
+                    <input type="submit" value="envoyer"/>
+                  </form>
+            </main>
             <footer>
-                <p>Pour voir d'avantage nos produits vous pouvez nous suivre nos différents réseaux sociaux</p>
+                <p class="produits">Pour voir d'avantage nos produits vous pouvez nous suivre nos différents réseaux sociaux</p>
                 <a href="https://www.facebook.com">Facebook</a>
                 <a href="https://www.instagram.com">Instagramme</a>
                 <a href="https://www.tiktok.com">Tiktok</a>
